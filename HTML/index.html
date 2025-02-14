@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Secciones</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-    
         .navbar {
             background-color: #ff4343;
         }
 
-        .navbar-dark .navbar-nav .nav-link {
+        .navbar .navbar-nav .nav-link {
             color: white;
             transition: color 0.3s, text-decoration 0.3s;
         }
 
-        .navbar-dark .navbar-nav .nav-link:hover {
+        .navbar .navbar-nav .nav-link:hover {
             color: #ffcccb;
             text-decoration: underline;
         }
 
         .bubble-card {
+            /*Elemento mio, le da los ajustes para funcionar*/
             width: 250px;
             height: 150px;
             border-radius: 20px;
@@ -40,16 +41,10 @@
         }
 
         .bubble-card:hover {
+            /*Le da la animacion al de arriba. Funciona igual con el bubble button*/
             transform: scale(1.1);
         }
 
-        .navbar {
-            background-color: #ff4343;
-        }
-
-        .navbar-dark .navbar-nav .nav-link {
-            color: white;
-        }
 
         .bubble-button {
             width: 250px;
@@ -69,11 +64,13 @@
         }
     </style>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a href="#"><img src="../HTML/Images/logo.png" alt="logo" class="img-fluid rounded-circle"  width="200"></a>
+    <nav class="navbar navbar-expand-lg">
+        <a href="#"><img src="../HTML/Images/logo.png" alt="logo" class="img-fluid rounded-circle" width="200"></a>
+        <!-- Para futuras paginas, si le das al logo te lleva a la home page -->
         <div class="container">
-            <a class="navbar-brand" href="#"><strong>Mi Portafolio</strong></a>
+            <a class="navbar-brand" style="color: white;" href="#"><strong>Mi Portafolio</strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -90,40 +87,57 @@
     </nav>
 
     <div class="container py-5" id="quien-soy">
-        <h2 class="text-center display-3" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><strong>Quién Soy</strong></h2>
+        <h2 class="text-center display-3"
+            style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><strong>Quién
+                Soy</strong></h2>
         <div class="row align-items-center">
             <div class="col-md-4 text-center">
                 <img src="Images/porta.jpg" class="img-fluid rounded-circle" alt="Mi Foto" width="200">
             </div>
             <div class="col-md-8">
-                <p class="text-center text-md-start">Soy estudiante de la Universidad EIA, donde actualmente curso mi pregrado en Ingeniería de Sistemas y Computación. 
-                    Me considero una persona exigente con mis entregas y proyectos, siempre buscando que queden lo mejor posible.
-                    Me apasiona el mundo de la tecnología, y aún más cuando aprendo durante el desarrollo de mis proyectos. En esta página, te mostraré un poco de mí. ;]
+                <p class="text-center text-md-start lead"> <strong>Me llamo Miguel Fonseca, soy estudiante de la
+                        Universidad EIA, donde actualmente curso mi
+                        pregrado en Ingeniería de Sistemas y Computación.
+                        Me considero una persona exigente con mis entregas y proyectos, siempre buscando que queden lo
+                        mejor
+                        posible.
+                        Me apasiona el mundo de la tecnología, y aún más cuando aprendo durante el desarrollo de mis
+                        proyectos. En esta página, te mostraré un poco de mí. ;]
+                    </strong>
                 </p>
             </div>
         </div>
     </div>
 
     <div class="container py-5" id="proyectos">
-        <h2 class="text-center display-3" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><strong>Proyectos</strong></h2>
+        <h2 class="text-center display-3"
+            style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <strong>Proyectos</strong>
+        </h2>
         <div class="row justify-content-center">
             <div class="col-md-4 d-flex flex-column align-items-center">
                 <div class="bubble-card">Supermercadito</div>
-                <button class="bubble-button" onclick="window.location.href='https://drive.google.com/file/d/1x-5k1gcvZ1pICLB1pPCxwVTfs781nY4G/view?usp=sharing'">Descargar Proyecto</button>
+                <button class="bubble-button"
+                    onclick="window.location.href='https://drive.google.com/file/d/1x-5k1gcvZ1pICLB1pPCxwVTfs781nY4G/view?usp=sharing'">Descargar
+                    Proyecto</button>
             </div>
             <div class="col-md-4 d-flex flex-column align-items-center">
                 <div class="bubble-card">Knight Tour</div>
-                <button class="bubble-button" onclick="window.location.href='https://github.com/Miguefon/Knight-tour.git'">Ver Proyecto</button>
+                <button class="bubble-button"
+                    onclick="window.location.href='https://github.com/Miguefon/Knight-tour.git'">Ver Proyecto</button>
             </div>
             <div class="col-md-4 d-flex flex-column align-items-center">
                 <div class="bubble-card">Proximamente</div>
-                <button class="bubble-button" >En proceso!</button>
+                <button class="bubble-button">En proceso!</button>
             </div>
         </div>
     </div>
 
     <div class="container py-5" id="habilidades">
-        <h2 class="text-center display-3" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><strong>Habilidades</strong></h2>
+        <h2 class="text-center display-3"
+            style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <strong>Habilidades</strong>
+        </h2>
         <div class="row justify-content-center">
             <div class="col-md-4 d-flex justify-content-center">
                 <div class="bubble-card">Conocimiento basico en C++</div>
@@ -135,7 +149,8 @@
                 <div class="bubble-card">Gran manejo en estructuras de datos</div>
             </div>
             <div class="col-md-4 d-flex justify-content-center">
-                <div class="bubble-card">Capacidad excepcional liderando y organizando equipos de trabajo (preguntar a Isis)</div>
+                <div class="bubble-card">Capacidad excepcional liderando y organizando equipos de trabajo (preguntar a
+                    Isis)</div>
             </div>
             <div class="col-md-4 d-flex justify-content-center">
                 <div class="bubble-card">Analisis de problemas y soluciones eficaces</div>
@@ -147,7 +162,10 @@
     </div>
 
     <div class="container py-5" id="pasatiempos">
-        <h2 class="text-center display-3" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><strong>Pasatiempos</strong></h2>
+        <h2 class="text-center display-3"
+            style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <strong>Pasatiempos</strong>
+        </h2>
         <div class="row justify-content-center">
             <div class="col-md-4 d-flex justify-content-center">
                 <div class="bubble-card">
@@ -188,8 +206,9 @@
             <button type="submit" class="bubble-button mx-auto d-block">Enviar</button>
         </form>
     </div>
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
