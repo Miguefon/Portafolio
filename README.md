@@ -1,1 +1,1 @@
-# Portafolio
+La pagina no utiliza nada diferente a Visual Studio Code, utilizar la funcion "Live server" para visualizar la pagina. Las imagenes ya estan descargadas y vienen con el archivo# Portafolio
